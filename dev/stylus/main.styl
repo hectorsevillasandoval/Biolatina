@@ -1,0 +1,112 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Hoja de estilos para 
+#				 la plantilla web de 
+				 Manantiales de Santo Domingo
+#	Fecha: 03/03/2015
+#	Hora: 23:00
+#
+#	1- Cabecera
+#	2- Menu
+#	3- Slider
+#	4- Seccion Principal
+#	5- Reviews
+#	6- mapa
+#	7- Redes Sociales
+#	8- Footer
+#	9- Mediaquery
+#####################################
+
+@import 'fonts.styl'*/
+@import 'normalize.styl'
+@import 'nib'
+
+
+//Colores
+dark-green = #37703d
+light-green = #a0c64c
+light-gray = #eee
+dark-gray = #a4a4a4
+gray-text = #454545
+
+html
+	font-size: 14px
+//OOCSS
+alinear()
+	display inline-block
+	vertical-align top
+rem(pixel)
+	(pixel/14)rem
+	
+fuentePrincipal(size)
+	font-family "Titillium Web"
+	font-size rem(size)
+
+fuenteTexto(size)
+	font-family "Open Sans"
+	font-size rem(size)
+a
+	text-decoration none
+img
+	max-width 100%
+	font-size 0
+ul
+p
+figure
+	margin 0
+	padding 0
+ul
+	list-style none
+h1
+	fuentePrincipal(60)
+	color dark-green
+	text-transform uppercase
+h3
+	fuentePrincipal(36)
+input[type="text"]
+input[type="mail"]
+	border 1px solid #d0dee7
+	box-sizing border-box
+	height 30px
+	padding-left: .7rem
+	width 100%
+textarea
+	border 1px solid #d0dee7
+	box-sizing border-box
+	padding-left: .7rem
+	width 100%
+body
+	font-family: OpenSans400
+	font-size: 14px
+	font-weight: normal
+icon(icono)
+	content "\"+icono
+	font-family fontawesome
+	color azul-claro
+	padding-right .7rem
+	
+parallax(imagen)
+	background-attachment fixed
+	background-image url(../img/imagen)
+	background-position top center
+	background-repeat no-repeat
+	background-size cover
+	//height 70vh
+	position relative
+	//text-indent -9999px
+/* FUENTES 
+
+    OPEN SANS REGULAR = OpenSans400
+    PRISTINA = pristina
+    GOTHAM EXTRA LIGHT = GothamXL
+    GOTHAM BOOK = GothamBK
+    GOTHAM BOLD = GothamB
+    GOTHAM LIGHT = GothamL
+    GOTHAM MEDIUM = GothamM
+    GOTHAM LIGHT ITALIC = GothamLIta
+
+*/
+/*
+@media screen and (min-width:768px)
+@media screen and (min-width:1000px) */
