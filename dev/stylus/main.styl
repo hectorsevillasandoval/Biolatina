@@ -77,13 +77,13 @@ textarea
 	padding-left: .7rem
 	width 100%
 body
-	font-family: OpenSans400
-	font-size: 14px
-	font-weight: normal
+	fuenteTexto(14)
+	font-weight: 300
+	background-color: #f3f3f3
+	line-height: 1.5
 icon(icono)
 	content "\"+icono
 	font-family fontawesome
-	color azul-claro
 	padding-right .7rem
 	
 parallax(imagen)
@@ -107,6 +107,233 @@ parallax(imagen)
     GOTHAM LIGHT ITALIC = GothamLIta
 
 */
+.alinear
+	alinear()
+.verMas
+	display block
+	padding .3rem 1.5rem
+	border-radius 7px
+	border 2px solid light-green
+	text-transform uppercase
+	color light-green
+	margin 2rem auto 0 auto
+	max-width rem(170)
+	width 100%
+	text-align: center
+	fuentePrincipal(36)
+	&:hover
+		background-color light-green
+		color white
+		border 1px solid dark-green
+.box
+	max-width rem(186)
+	width 100%
+	border 1px solid dark-green
+	margin 2rem auto
+	height rem(207)
+	position relative
+	.title
+		height rem(42)
+		color white
+		background-color: dark-green
+		text-transform: capitalize
+		font-size: rem(18)
+		text-align: center
+		padding-top: .7rem
+		box-sizing: border-box
+		line-height 1
+		&.twoLines
+			padding-top: .2rem
+	figure
+		text-align: center
+		padding 1rem 0
+	.view
+		width 0
+		height 0
+		border-bottom: rem(50) solid dark-green
+		border-left: rem(50) solid transparent
+		color white
+		position absolute
+		right 0
+		bottom 0
+	.arrow
+		position absolute
+		bottom 2px
+		right -4px
+		color white
+		z-index 2
+		&:before
+			icon("f061")
+			font-size 1.5rem
+	&:hover
+		border 1px solid light-green
+		.title
+			background-color: light-green
+		.view
+			border-bottom: rem(50) solid light-green
+.preHeader
+	.wrap
+		> div
+			width 50%
+			padding .2rem
+			box-sizing border-box
+			span
+				visibility hidden
+			&:first-child
+				background-color dark-green
+			&:last-child
+				background-color light-green
+
+// HEADER INICIO
+header
+	padding 1rem
+	figure
+		text-align center
+		padding 1rem 0
+	.social
+		text-align: center
+		li
+			alinear()
+			padding 1rem
+			a
+				font-size 3rem
+			&:first-child
+				a
+					display block
+					&:before
+						icon("f230")
+						color #3A5795
+			&:last-child
+				a
+					display block
+					&:before
+						icon("f081")
+						color #55ACEE
+	nav
+		text-align right
+		position relative
+		button
+			background-color transparent
+			border 1px solid light-green
+			border-radius 5px
+			&:before
+				icon("f0c9")
+				color dark-green
+				padding .4rem
+				display inline-block
+				font-size 2rem
+		ul
+			padding 1rem
+			display none
+			left 0
+			position absolute
+			right 0
+			li
+				border-bottom: 1px dotted light-green
+				margin .5rem auto
+				padding .5rem 0
+				text-align: left
+				a
+					display block
+					text-transform uppercase
+					fuentePrincipal(20)
+					color dark-green
+					&:after
+						icon("f061")
+						padding-left: 1rem
+				
+// HEADER FIN
+// CONTENIDO WELCOME INICIO
+section
+	padding 3rem 1rem
+	box-sizing border-box
+	h1
+		font-weight: 200
+		text-align: center
+	p
+		font-size: rem(16)
+// CONTENIDO WELCOME FIN
+// HOME HEADLINE INICIO
+.headline
+	h2
+		fuentePrincipal(40)
+		font-weight: 200
+		text-align: right
+		padding-right: .5rem
+		margin .5rem 0
+		color white
+	> div
+		width 50%
+		padding .2rem
+		box-sizing border-box
+		height 100%
+		span
+			visibility hidden
+		&:first-child
+			background-color dark-green
+		&:last-child
+			background-color light-green
+			h2
+				visibility hidden
+	
+		
+// HOME HEADLINE FIN
+// SERVICIOS INICIO
+.servicios
+	h3
+		fuentePrincipal(36)
+		color dark-green
+		font-weight: 200
+// SERVICIOS FIN
+// CURSOS Y ASESORIA INICIO
+.cursosAsesoria
+	padding-left 0
+	padding-right: 0
+	h4
+		fuentePrincipal(36)
+		font-weight: 600
+		text-transform: capitalize
+		padding-left 1rem
+		padding-right: 1rem
+		margin .3rem
+	.cursos
+		background-color: light-green
+		color white
+		ul
+			padding 1rem
+		li
+			position relative
+			a
+				color white
+				fuenteTexto(18)
+				//display block
+			&:before
+				content ""
+				width rem(62)
+				height rem(62)
+				display inline-block
+			&:first-child
+				background-image: url("../img/icon_agriculturaEcologica.png")
+				background-repeat: no-repeat
+			&:nth-child(2)
+				background-image: url("../img/icon_gestionDeLaCalidad.png")
+				background-repeat: no-repeat
+			&:nth-child(3)
+				background-image: url("../img/icon_buenasPracticasAgricolas.png")
+				background-repeat: no-repeat
+			&:nth-child(4)
+				background-image: url("../img/icon_buenasPraticasManufactura.png")
+				background-repeat: no-repeat
+			&:nth-child(5)
+				background-image: url("../img/icon_haccp.png")
+				background-repeat: no-repeat
+			&:nth-child(6)
+				background-image: url("../img/icon_normativasPrivadas.png")
+				background-repeat: no-repeat
+			&:last-child
+				background-image: url("../img/icon_formacionDeAgricultores.png")
+				background-repeat: no-repeat
+// CURSOS Y ASESORIA FIN
 /*
 @media screen and (min-width:768px)
 @media screen and (min-width:1000px) */
