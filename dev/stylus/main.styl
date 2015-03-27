@@ -275,17 +275,16 @@ parallax(imagen)
 		.view
 			border-bottom: rem(50) solid light-green
 .preHeader
-	.wrap
-		> div
-			width 50%
-			padding .2rem
-			box-sizing border-box
-			span
-				visibility hidden
-			&:first-child
-				background-color dark-green
-			&:last-child
-				background-color light-green
+	> div
+		width 50%
+		padding .2rem
+		box-sizing border-box
+		span
+			visibility hidden
+		&:first-child
+			background-color dark-green
+		&:last-child
+			background-color light-green
 
 // HEADER INICIO
 header
@@ -295,7 +294,6 @@ header
 		padding 1rem 0
 	.social
 		text-align: center
-		background-color: dark-gray
 		li
 			alinear()
 			padding 1rem
@@ -331,6 +329,7 @@ header
 			display none
 			left 0
 			position absolute
+			background-color: dark-gray
 			right 0
 			li
 				border-bottom: 1px dotted light-green
@@ -366,6 +365,7 @@ section
 		padding-right: .5rem
 		margin .5rem 0
 		color white
+		text-transform: uppercase
 	> div
 		width 50%
 		padding .2rem
@@ -403,6 +403,8 @@ section
 	.cursos
 		background-color: light-green
 		color white
+		padding-top 2rem
+		padding-bottom 2rem
 		ul
 			padding 1rem
 		li
@@ -434,6 +436,8 @@ section
 	.asesoria
 		background-color: light-gray
 		color light-green
+		padding-top 2rem
+		padding-bottom 2rem
 		ul
 			padding 1rem
 			li
@@ -476,7 +480,7 @@ section
 
 .box2
 	color gray-text
-	padding 1.5rem 1rem
+	padding 1.5rem 2rem
 	h4
 		fuentePrincipal(24)
 		margin-top 0
@@ -533,4 +537,151 @@ footer
 				margin-right .2rem
 				&:last-of-type
 					margin-right: 0
-/*@media screen and (min-width:1000px) */
+	.cursosAsesoria
+		&.medium
+			h4
+				text-align: center
+	div
+		&[class*="headline"]
+			h2
+				font-size: rem(60)
+				&:after
+					font-size: 4rem
+
+@media screen and (min-width:1000px)
+	.wrap
+		max-width rem(960)
+		margin-left: auto
+		margin-right: auto
+		clearfix()
+	header
+		&.large
+			figure
+			.social
+				alinear()
+			.social
+				float right
+			nav
+				text-align: center
+				button
+					display none
+				ul
+					display block
+					background-color: transparent
+					position relative
+					padding 0
+					li
+						alinear()
+						border-bottom: 0
+						padding 0
+						a
+							padding .7rem 1.8rem
+							border 2px solid transparent
+							&:after
+								display none
+							&:hover
+								border 2px solid light-green
+								border-radius 5px
+	.welcome
+		&.large
+			p
+				padding-left 9.6rem
+				padding-right: 9.6rem
+				font-size: 1rem
+				text-align: justify
+	.servicios
+		&.large
+			h3
+				text-align: center
+			.row1
+			.row2
+			.row3
+			.row4
+			.row5
+				.box
+					margin-right: 4rem
+					&:last-of-type
+						margin-right: 0
+			.alineadoEspecial
+				> div
+					alinear()
+					&.caja1
+						width 50%
+					&.caja2
+						width 25%
+						.relativo
+							//margin-top: -1rem
+							line-height: 1
+						.row4
+							.box
+								margin-top: rem(10)
+					&.caja3
+						width 25%
+	.cursosAsesoria
+		&.large
+			padding 0
+			height rem(795)
+			article
+				width 50%
+				alinear()
+				clearfix()
+				height 100%
+				box-sizing border-box
+				> .container
+					max-width 34rem
+					h4
+						text-align: left
+				&.cursos
+					.container
+						float right
+				&.asesoria
+					.container
+						float left
+						padding-left 3rem
+						max-width 29rem
+						ul
+							padding-top: 5rem
+							li
+								position relative
+								&:after
+									right -5rem
+									position absolute
+									font-size: 6rem
+								&:first-child
+									&:after
+										top 0
+								&:last-child
+									&:after
+										top 20%
+	.testimonios
+		&.large
+			p
+				max-width rem(604)
+				margin-left: auto
+				margin-right: auto
+				padding 0 2rem
+				box-sizing border-box
+	.ubicaciones
+		&.large
+			padding 0
+			.box2
+				width rem(320)
+				min-height rem(420)
+				alinear()
+				box-sizing border-box
+				border 1px solid #dbdbdb
+				h4
+					font-size: 1.2rem
+				p
+					font-size 14px
+	.formulario
+		&.large
+			clearfix()
+			.left
+			.right
+				max-width 48%
+			.left
+				float left
+				margin-right: 2%
+			.right
+				float right
