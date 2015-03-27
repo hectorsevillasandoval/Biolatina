@@ -544,6 +544,10 @@ section p {
   font-weight: 200;
 }
 
+.alineadoEspecial {
+  text-align: center;
+}
+
 .cursosAsesoria {
   padding-left: 0;
   padding-right: 0;
